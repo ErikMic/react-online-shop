@@ -3,3 +3,10 @@
     gap: 32px;
     padding-inline: 32px;
 }
+
+@media (max-width: 850px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
