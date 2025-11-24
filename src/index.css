@@ -12,6 +12,10 @@
 .shopping-basket {
     text-align: center;
     width: 25vw;
+
+    h3 {
+        padding-top: 16px;
+    }
 }
 
 @media (max-width: 850px) {

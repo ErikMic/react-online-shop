@@ -11,7 +11,10 @@ class App extends Component {
     addItem = (amount, name, price) => {
         let currentItems = this.state.basketItems;
         let existingItem = currentItems.find(item => item.name === name);
-        
+        let endPrice = price * amount;
+
+        currentItems.totalPrice = (currentItems.totalPrice || 0) + endPrice;
+
         if (existingItem) {
             existingItem.amount += amount;
             this.setState({ basketItems: currentItems });
